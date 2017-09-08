@@ -81,6 +81,13 @@ class Document extends \DOMDocument
     /**
      * {@inheritdoc}
      */
+    public function _clone() {
+        return null;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getHtml(): string {
         return $this->getOuterHtml();
     }
