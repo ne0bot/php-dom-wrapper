@@ -13,12 +13,6 @@ use DOMWrap\NodeList;
  */
 trait NodeTrait
 {
-    /** @see TraversalTrait::newNodeList() */
-    abstract public function newNodeList(iterable $nodes = null): NodeList;
-
-    /** @see CommonTrait::isRemoved() */
-    abstract public function isRemoved(): bool;
-
     /**
      * @return NodeList
      */

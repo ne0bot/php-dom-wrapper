@@ -16,24 +16,6 @@ use DOMWrap\{
  */
 trait ManipulationTrait
 {
-    /** @see CommonTrait::collection() */
-    abstract public function collection(): NodeList;
-
-    /** @see CommonTrait::document() */
-    abstract public function document(): ?\DOMDocument;
-
-    /** @see CommonTrait::result() */
-    abstract public function result(NodeList $nodeList);
-
-    /** @see TraversalTrait::find() */
-    abstract public function find(string $selector, string $prefix = 'descendant::'): NodeList;
-
-    /** @see TraversalTrait::findXPath() */
-    abstract public function findXPath(string $xpath): NodeList;
-
-    /** @see TraversalTrait::newNodeList() */
-    abstract public function newNodeList(iterable $nodes = null): NodeList;
-
     /**
      * Magic method - Trap function names using reserved keyword (empty, clone, etc..)
      *

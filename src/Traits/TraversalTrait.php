@@ -16,18 +16,6 @@ use Symfony\Component\CssSelector\CssSelectorConverter;
  */
 trait TraversalTrait
 {
-    /** @see CommonTrait::collection() */
-    abstract public function collection(): NodeList;
-
-    /** @see CommonTrait::document() */
-    abstract public function document(): ?\DOMDocument;
-
-    /** @see CommonTrait::result() */
-    abstract public function result(NodeList $nodeList);
-
-    /** @see ManipulationTrait::inputAsNodeList() */
-    abstract public function inputAsNodeList($input): NodeList;
-
     /**
      * @param iterable $nodes
      *
