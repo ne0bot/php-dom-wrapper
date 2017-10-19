@@ -185,8 +185,8 @@ trait ManipulationTrait
     /**
      * @return string
      */
-    public function getText() {
-        return $this->collection()->reduce(function($carry, $node) {
+    public function getText(): string {
+        return (string)$this->collection()->reduce(function($carry, $node) {
             return $carry . $node->textContent;
         }, '');
     }
